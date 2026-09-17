@@ -83,20 +83,161 @@ const siteConfig = {
     "Jasa Sewa Onshore & Offshore",
   ],
 
-  // Setiap item portofolio: title, tag (klien/kategori), image (path di /assets)
+  // Setiap item portofolio: title, tag (klien/kategori), images (array foto di /assets/portfolio/<slug>/)
+  // Foto pertama di array jadi cover di grid; semua foto bisa digeser (slider) saat card diklik.
   portfolio: [
-    { title: "Shelter Limbah Chemical MB2", tag: "PHE ONWJ", image: "assets/portfolio-shelter-limbah.jpg" },
-    { title: "Fabrikasi Living Quarter KLA F/S", tag: "PHE ONWJ", image: "assets/portfolio-living-quarter.jpg" },
-    { title: "Re-design Public Toilet & Mushola Zulu F/S", tag: "PHE ONWJ", image: "assets/portfolio-toilet-zulu.jpg" },
-    { title: "Re-design Public Toilet PAPA F/S", tag: "PHE ONWJ", image: "assets/portfolio-toilet-papa.jpg" },
-    { title: "Re-design VTS Room PAPA F/S", tag: "PHE ONWJ", image: "assets/portfolio-vts-room.jpg" },
-    { title: "Re-design & Fabrikasi Mushola Mike Mike F/S", tag: "PHE ONWJ", image: "assets/portfolio-mushola-mikemike.jpg" },
-    { title: "Re-design & Fabrikasi Gym Mike Mike F/S", tag: "PHE ONWJ", image: "assets/portfolio-gym-mikemike.jpg" },
-    { title: "Re-design & Fabrikasi Shelter Fire Truck & Jetty MB2", tag: "PHE ONWJ", image: "assets/portfolio-firetruck-jetty.jpg" },
-    { title: "Positioning Survey", tag: "Jasa Survey", image: "assets/portfolio-positioning-survey.jpg" },
-    { title: "Super Dome", tag: "Jasa Sewa Onshore & Offshore", image: "assets/portfolio-super-dome.jpg" },
-    { title: "Mooring Set", tag: "Jasa Sewa Onshore & Offshore", image: "assets/portfolio-mooring-set.jpg" },
-    { title: "AGD — Automatic Gas Detector", tag: "Jasa Sewa Onshore & Offshore", image: "assets/portfolio-agd.jpg" },
+    {
+      title: "Shelter Limbah Chemical MB2",
+      tag: "PHE ONWJ",
+      images: [
+        "assets/portfolio/shelter-limbah/01.jpg",
+        "assets/portfolio/shelter-limbah/02.jpg",
+        "assets/portfolio/shelter-limbah/03.jpg",
+        "assets/portfolio/shelter-limbah/04.jpg",
+        "assets/portfolio/shelter-limbah/05.jpg",
+      ],
+    },
+    {
+      title: "Fabrikasi Living Quarter KLA F/S",
+      tag: "PHE ONWJ",
+      images: [
+        "assets/portfolio/living-quarter/01.jpg",
+        "assets/portfolio/living-quarter/02.jpg",
+        "assets/portfolio/living-quarter/03.jpg",
+        "assets/portfolio/living-quarter/04.jpg",
+        "assets/portfolio/living-quarter/05.jpg",
+        "assets/portfolio/living-quarter/06.jpg",
+        "assets/portfolio/living-quarter/07.jpg",
+        "assets/portfolio/living-quarter/08.jpg",
+        "assets/portfolio/living-quarter/09.jpg",
+        "assets/portfolio/living-quarter/10.jpg",
+      ],
+    },
+    {
+      title: "Re-design Public Toilet & Mushola Zulu F/S",
+      tag: "PHE ONWJ",
+      images: [
+        "assets/portfolio/toilet-zulu/01.jpg",
+        "assets/portfolio/toilet-zulu/02.jpg",
+        "assets/portfolio/toilet-zulu/03.jpg",
+        "assets/portfolio/toilet-zulu/04.jpg",
+        "assets/portfolio/toilet-zulu/05.jpg",
+        "assets/portfolio/toilet-zulu/06.jpg",
+        "assets/portfolio/toilet-zulu/07.jpg",
+        "assets/portfolio/toilet-zulu/08.jpg",
+      ],
+    },
+    {
+      title: "Re-design Public Toilet PAPA F/S",
+      tag: "PHE ONWJ",
+      images: [
+        "assets/portfolio/toilet-papa/01.jpg",
+        "assets/portfolio/toilet-papa/02.jpg",
+        "assets/portfolio/toilet-papa/03.jpg",
+        "assets/portfolio/toilet-papa/04.jpg",
+        "assets/portfolio/toilet-papa/05.jpg",
+        "assets/portfolio/toilet-papa/06.jpg",
+      ],
+    },
+    {
+      title: "Re-design VTS Room PAPA F/S",
+      tag: "PHE ONWJ",
+      images: [
+        "assets/portfolio/vts-room/01.jpg",
+        "assets/portfolio/vts-room/02.jpg",
+        "assets/portfolio/vts-room/03.jpg",
+        "assets/portfolio/vts-room/04.jpg",
+        "assets/portfolio/vts-room/05.jpg",
+      ],
+    },
+    {
+      title: "Re-design & Fabrikasi Mushola Mike Mike F/S",
+      tag: "PHE ONWJ",
+      images: [
+        "assets/portfolio/mushola-mikemike/01.jpg",
+        "assets/portfolio/mushola-mikemike/02.jpg",
+        "assets/portfolio/mushola-mikemike/03.jpg",
+        "assets/portfolio/mushola-mikemike/04.jpg",
+        "assets/portfolio/mushola-mikemike/05.jpg",
+        "assets/portfolio/mushola-mikemike/06.jpg",
+        "assets/portfolio/mushola-mikemike/07.jpg",
+      ],
+    },
+    {
+      title: "Re-design & Fabrikasi Gym Mike Mike F/S",
+      tag: "PHE ONWJ",
+      images: [
+        "assets/portfolio/gym-mikemike/01.jpg",
+        "assets/portfolio/gym-mikemike/02.jpg",
+        "assets/portfolio/gym-mikemike/03.jpg",
+        "assets/portfolio/gym-mikemike/04.jpg",
+        "assets/portfolio/gym-mikemike/05.jpg",
+        "assets/portfolio/gym-mikemike/06.jpg",
+        "assets/portfolio/gym-mikemike/07.jpg",
+      ],
+    },
+    {
+      title: "Re-design & Fabrikasi Shelter Fire Truck & Jetty MB2",
+      tag: "PHE ONWJ",
+      images: [
+        "assets/portfolio/firetruck-jetty/01.jpg",
+        "assets/portfolio/firetruck-jetty/02.jpg",
+        "assets/portfolio/firetruck-jetty/03.jpg",
+        "assets/portfolio/firetruck-jetty/04.jpg",
+        "assets/portfolio/firetruck-jetty/05.jpg",
+        "assets/portfolio/firetruck-jetty/06.jpg",
+      ],
+    },
+    {
+      title: "Positioning Survey",
+      tag: "Jasa Survey",
+      images: [
+        "assets/portfolio/positioning-survey/01.jpg",
+        "assets/portfolio/positioning-survey/02.jpg",
+        "assets/portfolio/positioning-survey/03.jpg",
+        "assets/portfolio/positioning-survey/04.jpg",
+        "assets/portfolio/positioning-survey/05.jpg",
+        "assets/portfolio/positioning-survey/06.jpg",
+        "assets/portfolio/positioning-survey/07.jpg",
+      ],
+    },
+    {
+      title: "Super Dome",
+      tag: "Jasa Sewa Onshore & Offshore",
+      images: ["assets/portfolio-super-dome.jpg"],
+    },
+    {
+      title: "Mooring Set",
+      tag: "Jasa Sewa Onshore & Offshore",
+      images: [
+        "assets/portfolio/mooring-set/01.jpg",
+        "assets/portfolio/mooring-set/02.jpg",
+        "assets/portfolio/mooring-set/03.jpg",
+        "assets/portfolio/mooring-set/04.jpg",
+        "assets/portfolio/mooring-set/05.jpg",
+        "assets/portfolio/mooring-set/06.jpg",
+        "assets/portfolio/mooring-set/07.jpg",
+      ],
+    },
+    {
+      title: "AGD — Automatic Gas Detector",
+      tag: "Jasa Sewa Onshore & Offshore",
+      images: [
+        "assets/portfolio/agd/01.jpg",
+        "assets/portfolio/agd/02.jpg",
+        "assets/portfolio/agd/03.jpg",
+      ],
+    },
+    {
+      title: "Chiksan Pipe for Temporary Flow Line",
+      tag: "Jasa Sewa Onshore & Offshore",
+      images: [
+        "assets/portfolio/chiksan/01.jpg",
+        "assets/portfolio/chiksan/02.jpg",
+        "assets/portfolio/chiksan/03.jpg",
+        "assets/portfolio/chiksan/04.jpg",
+      ],
+    },
   ],
 
   contact: {
@@ -146,10 +287,11 @@ function renderSite(cfg) {
 
   document.getElementById("portfolio-grid").innerHTML = cfg.portfolio
     .map(
-      (p) => `
-      <article class="portfolio-card">
+      (p, i) => `
+      <article class="portfolio-card" data-index="${i}">
         <figure>
-          <img src="${p.image}" alt="${p.title}">
+          <img src="${p.images[0]}" alt="${p.title}">
+          ${p.images.length > 1 ? `<span class="photo-count">${p.images.length} foto</span>` : ""}
         </figure>
         <figcaption>
           <span class="tag">${p.tag}</span>
@@ -334,22 +476,59 @@ function setupHero(reduceMotion) {
   });
 }
 
-/* ---------------- Portfolio lightbox ---------------- */
-function setupLightbox() {
+/* ---------------- Portfolio lightbox (gallery slider) ---------------- */
+function setupLightbox(cfg) {
   const grid = document.getElementById("portfolio-grid");
   const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
+  const track = document.getElementById("lightbox-track");
   const caption = document.getElementById("lightbox-caption");
+  const counter = document.getElementById("lightbox-counter");
+  const dotsWrap = document.getElementById("lightbox-dots");
   const closeBtn = document.getElementById("lightbox-close");
+  const prevBtn = document.getElementById("lightbox-prev");
+  const nextBtn = document.getElementById("lightbox-next");
 
-  function open(src, title, tag) {
-    lightboxImg.src = src;
-    lightboxImg.alt = title;
+  let images = [];
+  let title = "";
+  let tag = "";
+  let index = 0;
+
+  function renderSlide() {
+    track.style.transform = `translateX(-${index * 100}%)`;
     caption.textContent = `${title} — ${tag}`;
+    counter.textContent = `${index + 1} / ${images.length}`;
+    dotsWrap.querySelectorAll("button").forEach((d, i) =>
+      d.classList.toggle("active", i === index)
+    );
+    prevBtn.style.visibility = images.length > 1 ? "visible" : "hidden";
+    nextBtn.style.visibility = images.length > 1 ? "visible" : "hidden";
+  }
+
+  function goTo(i) {
+    index = (i + images.length) % images.length;
+    renderSlide();
+  }
+
+  function open(project, startIndex) {
+    images = project.images;
+    title = project.title;
+    tag = project.tag;
+    index = startIndex || 0;
+
+    track.innerHTML = images
+      .map((src) => `<div class="lightbox-slide"><img src="${src}" alt="${title}"></div>`)
+      .join("");
+    dotsWrap.innerHTML =
+      images.length > 1
+        ? images.map((_, i) => `<button aria-label="Foto ${i + 1}"></button>`).join("")
+        : "";
+
+    renderSlide();
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
   }
+
   function close() {
     lightbox.classList.remove("open");
     lightbox.setAttribute("aria-hidden", "true");
@@ -359,18 +538,46 @@ function setupLightbox() {
   grid.addEventListener("click", (e) => {
     const card = e.target.closest(".portfolio-card");
     if (!card) return;
-    const img = card.querySelector("img");
-    const title = card.querySelector("h3")?.textContent || "";
-    const tag = card.querySelector(".tag")?.textContent || "";
-    open(img.src, title, tag);
+    const i = parseInt(card.dataset.index, 10);
+    open(cfg.portfolio[i], 0);
   });
+
+  dotsWrap.addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+    goTo(Array.from(dotsWrap.children).indexOf(btn));
+  });
+
+  prevBtn.addEventListener("click", () => goTo(index - 1));
+  nextBtn.addEventListener("click", () => goTo(index + 1));
   closeBtn.addEventListener("click", close);
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) close();
   });
   document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("open")) return;
     if (e.key === "Escape") close();
+    if (e.key === "ArrowRight") goTo(index + 1);
+    if (e.key === "ArrowLeft") goTo(index - 1);
   });
+
+  // Swipe support (touch devices)
+  let touchStartX = null;
+  track.addEventListener(
+    "touchstart",
+    (e) => (touchStartX = e.touches[0].clientX),
+    { passive: true }
+  );
+  track.addEventListener(
+    "touchend",
+    (e) => {
+      if (touchStartX === null) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) goTo(dx < 0 ? index + 1 : index - 1);
+      touchStartX = null;
+    },
+    { passive: true }
+  );
 }
 
 /* ---------------- Back to top button ---------------- */
@@ -399,6 +606,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupRevealAnimations(reduceMotion);
   setupStatsCountUp(reduceMotion);
   setupHero(reduceMotion);
-  setupLightbox();
+  setupLightbox(siteConfig);
   setupBackToTop();
 });

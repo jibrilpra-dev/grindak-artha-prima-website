@@ -57,6 +57,15 @@ seperti pada contoh di prompt markdown yang menyertai file ini).
 
 Semua ini murni CSS + JavaScript vanilla (tidak ada library animasi eksternal), jadi ringan dan mudah dimodifikasi — cari komentar `/* --- ... --- */` di `css/style.css` dan fungsi `setup...()` di `js/script.js`.
 
+## Galeri foto per proyek (portofolio)
+Tiap card portofolio sekarang bisa memuat BANYAK foto (bukan cuma 1). Saat card
+diklik, muncul lightbox dengan slider — bisa digeser lewat tombol panah, titik
+(dots) di bawah, tombol panah kiri/kanan keyboard, atau swipe di HP.
+
+Untuk menambah/mengganti foto sebuah proyek, edit array `images` pada item
+terkait di `siteConfig.portfolio` (di `js/script.js`), lalu taruh file fotonya
+di `assets/portfolio/<nama-folder>/`. Urutan array = urutan slide.
+
 ## Catatan
 Foto-foto di folder `assets/` diambil dari file Company Profile (PDF) yang
 Anda unggah, sudah dikompres agar ringan untuk web. Ganti dengan foto resolusi
