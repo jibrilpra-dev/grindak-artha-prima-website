@@ -204,7 +204,9 @@ const siteConfig = {
     {
       title: "Super Dome",
       tag: "Jasa Sewa Onshore & Offshore",
-      images: ["assets/portfolio-super-dome.jpg"],
+      images: [
+        "assets/portfolio/super-dome/01.jpg",
+      ],
     },
     {
       title: "Mooring Set",

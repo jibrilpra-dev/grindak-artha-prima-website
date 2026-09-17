@@ -44,6 +44,7 @@
     <div class="hero-shape"></div>
   </div>
   <div class="hero-content">
+    <p class="eyebrow">Company Profile</p>
     <h1 id="hero-title">PT. GRINDAK<br>ARTHA PRIMA</h1>
     <p class="hero-tagline" id="hero-tagline">Design &amp; Builder — Contractor &amp; Developer</p>
     <p class="hero-desc" id="hero-desc">
@@ -55,6 +56,7 @@
       <a href="#kontak" class="btn btn-ghost">Hubungi Kami</a>
     </div>
   </div>
+  <a href="#tentang" class="scroll-cue" aria-label="Gulir ke bawah"><span></span></a>
 </section>
 
 <!-- ============ STATS STRIP ============ -->
@@ -175,12 +177,20 @@
   </div>
 </footer>
 
-<!-- ============ LIGHTBOX (portofolio) ============ -->
+<!-- ============ LIGHTBOX (portofolio, gallery slider) ============ -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lightbox-close" id="lightbox-close" aria-label="Tutup">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Foto sebelumnya">&#10094;</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Foto berikutnya">&#10095;</button>
   <figure>
-    <img src="" alt="" id="lightbox-img">
-    <figcaption id="lightbox-caption"></figcaption>
+    <div class="lightbox-viewport">
+      <div class="lightbox-track" id="lightbox-track"></div>
+    </div>
+    <div class="lightbox-meta">
+      <figcaption id="lightbox-caption"></figcaption>
+      <span class="lightbox-counter" id="lightbox-counter"></span>
+    </div>
+    <div class="lightbox-dots" id="lightbox-dots"></div>
   </figure>
 </div>
 
@@ -188,5 +198,5 @@
 <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">&uarr;</button>
 
 <script src="js/script.js"></script>
-<script>window.__CF$cv$params={r:'a3c5729368019c9b',t:'MTc4OTYyMDE4MQ==',u:'01a0adacdb5174689864c4c69dbed7a3',ut:'kwOIHSQYiLULK9_Wv1.x4o63Z0cVfoz8Fgun6GSf_H0-1789620181-1.2.1.1-_ncH7lOZHUZpRySSbEkDPUn0NgDDk_.Sc4xrWYwUUUa5SCSH2dzZjT0t79OyJ1gBtxXNtQcK8NOlK4DLu9qiTVh9yXVWxK7AcIS0TsO7Xfs',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script></body>
+</body>
 </html>
