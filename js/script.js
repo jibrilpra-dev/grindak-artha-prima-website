@@ -102,12 +102,12 @@ const siteConfig = {
     whatsapp: "+62 812 9999 8888",  /* GANTI DENGAN NOMOR WHATSAPP ANDA */
   },
 
-  /* GOOGLE REVIEWS — Google Business ID: 15843536370041466542 */
+  /* GOOGLE REVIEWS — Google Maps Shortlink */
   googleReviews: {
     rating: "4.8",
     totalReviews: "48+",
     businessId: "15843536370041466542",
-    profileUrl: "https://www.google.com/maps/place/?q=place_id:15843536370041466542",
+    profileUrl: "https://maps.app.goo.gl/zxUz9vYggwDJstah6",
   },
 
   footer: {
