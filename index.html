@@ -195,12 +195,20 @@
   </div>
 </footer>
 
-<!-- ============ LIGHTBOX (portofolio) ============ -->
+<!-- ============ LIGHTBOX (portofolio gallery slider) ============ -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lightbox-close" id="lightbox-close" aria-label="Tutup">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Foto sebelumnya">&#10094;</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Foto berikutnya">&#10095;</button>
   <figure>
-    <img src="" alt="" id="lightbox-img">
-    <figcaption id="lightbox-caption"></figcaption>
+    <div class="lightbox-viewport">
+      <div class="lightbox-track" id="lightbox-track"></div>
+    </div>
+    <div class="lightbox-meta">
+      <figcaption id="lightbox-caption"></figcaption>
+      <span class="lightbox-counter" id="lightbox-counter"></span>
+    </div>
+    <div class="lightbox-dots" id="lightbox-dots"></div>
   </figure>
 </div>
 

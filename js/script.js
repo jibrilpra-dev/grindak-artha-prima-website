@@ -515,42 +515,108 @@ function setupHero(reduceMotion) {
   });
 }
 
-/* ---------------- Portfolio lightbox (simple single image) -------- */
-function setupLightbox() {
+/* ---------------- Portfolio lightbox (gallery slider) -------- */
+function setupLightbox(cfg) {
   const grid = document.getElementById("portfolio-grid");
   const lightbox = document.getElementById("lightbox");
-  const img = document.getElementById("lightbox-img");
+  const track = document.getElementById("lightbox-track");
   const caption = document.getElementById("lightbox-caption");
+  const counter = document.getElementById("lightbox-counter");
+  const dotsWrap = document.getElementById("lightbox-dots");
   const closeBtn = document.getElementById("lightbox-close");
+  const prevBtn = document.getElementById("lightbox-prev");
+  const nextBtn = document.getElementById("lightbox-next");
+
+  let images = [];
+  let title = "";
+  let tag = "";
+  let index = 0;
+
+  function renderSlide() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    caption.textContent = `${title} — ${tag}`;
+    counter.textContent = `${index + 1} / ${images.length}`;
+    dotsWrap.querySelectorAll("button").forEach((d, i) =>
+      d.classList.toggle("active", i === index)
+    );
+    prevBtn.style.visibility = images.length > 1 ? "visible" : "hidden";
+    nextBtn.style.visibility = images.length > 1 ? "visible" : "hidden";
+  }
+
+  function goTo(i) {
+    index = (i + images.length) % images.length;
+    renderSlide();
+  }
+
+  function open(project, startIndex) {
+    images = project.images;
+    title = project.title;
+    tag = project.tag;
+    index = startIndex || 0;
+
+    track.innerHTML = images
+      .map((src) => `<div class="lightbox-slide"><img src="${src}" alt="${title}"></div>`)
+      .join("");
+    dotsWrap.innerHTML =
+      images.length > 1
+        ? images.map((_, i) => `<button aria-label="Foto ${i + 1}"></button>`).join("")
+        : "";
+
+    renderSlide();
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function close() {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
 
   grid.addEventListener("click", (e) => {
     const card = e.target.closest(".portfolio-card");
     if (!card) return;
-    const imgEl = card.querySelector("img");
-    const titleEl = card.querySelector("h3");
-    const tagEl = card.querySelector(".tag");
-    
-    img.src = imgEl.src;
-    img.alt = titleEl.textContent;
-    caption.textContent = `${titleEl.textContent} — ${tagEl.textContent}`;
-    lightbox.classList.add("open");
-    lightbox.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
+    const i = parseInt(card.dataset.index, 10);
+    open(cfg.portfolio[i], 0);
   });
 
-  const close = () => {
-    lightbox.classList.remove("open");
-    lightbox.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-  };
+  dotsWrap.addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+    goTo(Array.from(dotsWrap.children).indexOf(btn));
+  });
 
+  prevBtn.addEventListener("click", () => goTo(index - 1));
+  nextBtn.addEventListener("click", () => goTo(index + 1));
   closeBtn.addEventListener("click", close);
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) close();
   });
   document.addEventListener("keydown", (e) => {
-    if (lightbox.classList.contains("open") && e.key === "Escape") close();
+    if (!lightbox.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowRight") goTo(index + 1);
+    if (e.key === "ArrowLeft") goTo(index - 1);
   });
+
+  // Swipe support (touch devices)
+  let touchStartX = null;
+  track.addEventListener(
+    "touchstart",
+    (e) => (touchStartX = e.touches[0].clientX),
+    { passive: true }
+  );
+  track.addEventListener(
+    "touchend",
+    (e) => {
+      if (touchStartX === null) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) goTo(dx < 0 ? index + 1 : index - 1);
+      touchStartX = null;
+    },
+    { passive: true }
+  );
 }
 
 /* ---------------- WhatsApp Widget visibility on scroll -------- */
@@ -589,7 +655,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupRevealAnimations(reduceMotion);
   setupStatsCountUp(reduceMotion);
   setupHero(reduceMotion);
-  setupLightbox();
+  setupLightbox(siteConfig);
   setupWhatsAppWidget();
   setupBackToTop();
 });

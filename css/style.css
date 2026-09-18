@@ -295,6 +295,10 @@ p{margin:0 0 1em;}
   opacity:0; transition:opacity .25s ease;
 }
 .portfolio-card:hover figure::after{opacity:1;}
+.photo-count{
+  position:absolute; left:10px; bottom:10px; background:rgba(6,35,26,.72); color:#fff;
+  font-size:.72rem; padding:.3em .6em; letter-spacing:.03em;
+}
 .portfolio-card figcaption{padding:16px 18px;}
 .portfolio-card .tag{
   display:inline-block; font-size:.72rem; text-transform:uppercase; letter-spacing:.06em;
@@ -365,22 +369,65 @@ p{margin:0 0 1em;}
 .contact-form button.is-loading .btn-spinner{display:inline-block;}
 @keyframes spin{ to{transform:rotate(360deg);} }
 
-/* ---------------- Lightbox ---------------- */
+/* ---------------- Lightbox (gallery slider) -------- */
 .lightbox{
-  position:fixed; inset:0; background:rgba(6,14,22,.92);
-  display:flex; align-items:center; justify-content:center; padding:40px;
+  position:fixed; inset:0; background:rgba(6,14,22,.94);
+  display:flex; align-items:center; justify-content:center; padding:56px 24px;
   opacity:0; visibility:hidden; transition:opacity .3s ease; z-index:200;
 }
 .lightbox.open{opacity:1; visibility:visible;}
-.lightbox figure{margin:0; max-width:min(92vw, 1000px); text-align:center; transform:scale(.96); transition:transform .3s ease;}
+.lightbox figure{margin:0; max-width:min(92vw, 1050px); width:100%; text-align:center; transform:scale(.96); transition:transform .3s ease;}
 .lightbox.open figure{transform:scale(1);}
-.lightbox img{max-height:80vh; width:auto; margin:0 auto; box-shadow:0 20px 60px rgba(0,0,0,.5);}
-.lightbox figcaption{color:#EDEFF2; margin-top:14px; font-family:var(--font-display); letter-spacing:.02em;}
+
+/* Viewport & Track (slider) */
+.lightbox-viewport{overflow:hidden; width:100%; border-radius:2px;}
+.lightbox-track{display:flex; transition:transform .35s ease;}
+.lightbox-slide{flex:0 0 100%; display:flex; align-items:center; justify-content:center;}
+.lightbox-slide img{
+  max-height:72vh; width:auto; max-width:100%; margin:0 auto;
+  box-shadow:0 20px 60px rgba(0,0,0,.5); object-fit:contain;
+}
+
+/* Metadata & Counter */
+.lightbox-meta{
+  display:flex; align-items:baseline; justify-content:center; gap:14px;
+  margin-top:14px; color:#EDEFF2; flex-wrap:wrap;
+}
+.lightbox-meta figcaption{font-family:var(--font-display); letter-spacing:.02em; margin:0;}
+.lightbox-counter{font-size:.8rem; color:#A7C4B6; font-family:var(--font-body);}
+
+/* Dot indicators */
+.lightbox-dots{display:flex; justify-content:center; gap:8px; margin-top:14px;}
+.lightbox-dots button{
+  width:8px; height:8px; border-radius:50%; border:none; background:rgba(255,255,255,.3);
+  cursor:pointer; padding:0;
+}
+.lightbox-dots button.active{background:var(--ember); width:20px; border-radius:5px; transition:width .2s ease;}
+
+/* Close button */
 .lightbox-close{
   position:absolute; top:22px; right:28px; background:none; border:none; color:#fff;
-  font-size:2.2rem; line-height:1; cursor:pointer; padding:6px 10px;
+  font-size:2.2rem; line-height:1; cursor:pointer; padding:6px 10px; z-index:2;
 }
 .lightbox-close:hover{color:var(--mint);}
+
+/* Navigation arrows */
+.lightbox-nav{
+  position:absolute; top:50%; transform:translateY(-50%); z-index:2;
+  width:46px; height:46px; border-radius:50%; border:1px solid rgba(255,255,255,.3);
+  background:rgba(255,255,255,.06); color:#fff; font-size:1rem; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition: background .2s ease, transform .2s ease;
+}
+.lightbox-nav:hover{background:var(--ember); border-color:var(--ember);}
+.lightbox-prev{left:16px;}
+.lightbox-next{right:16px;}
+
+@media (max-width:640px){
+  .lightbox-nav{width:38px; height:38px; font-size:.85rem;}
+  .lightbox-prev{left:6px;}
+  .lightbox-next{right:6px;}
+}
 
 /* ---------------- WhatsApp Widget ============ */
 .whatsapp-widget{
