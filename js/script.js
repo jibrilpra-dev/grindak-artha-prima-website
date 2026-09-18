@@ -83,172 +83,30 @@ const siteConfig = {
     "Jasa Sewa Onshore & Offshore",
   ],
 
-  // Setiap item portofolio: title, tag (klien/kategori), images (array foto di /assets/portfolio/<slug>/)
-  // Foto pertama di array jadi cover di grid; semua foto bisa digeser (slider) saat card diklik.
-  portfolio: [
-    {
-      title: "Shelter Limbah Chemical MB2",
-      tag: "PHE ONWJ",
-      images: [
-        "assets/portfolio/shelter-limbah/01.jpg",
-        "assets/portfolio/shelter-limbah/02.jpg",
-        "assets/portfolio/shelter-limbah/03.jpg",
-        "assets/portfolio/shelter-limbah/04.jpg",
-        "assets/portfolio/shelter-limbah/05.jpg",
-      ],
-    },
-    {
-      title: "Fabrikasi Living Quarter KLA F/S",
-      tag: "PHE ONWJ",
-      images: [
-        "assets/portfolio/living-quarter/01.jpg",
-        "assets/portfolio/living-quarter/02.jpg",
-        "assets/portfolio/living-quarter/03.jpg",
-        "assets/portfolio/living-quarter/04.jpg",
-        "assets/portfolio/living-quarter/05.jpg",
-        "assets/portfolio/living-quarter/06.jpg",
-        "assets/portfolio/living-quarter/07.jpg",
-        "assets/portfolio/living-quarter/08.jpg",
-        "assets/portfolio/living-quarter/09.jpg",
-        "assets/portfolio/living-quarter/10.jpg",
-      ],
-    },
-    {
-      title: "Re-design Public Toilet & Mushola Zulu F/S",
-      tag: "PHE ONWJ",
-      images: [
-        "assets/portfolio/toilet-zulu/01.jpg",
-        "assets/portfolio/toilet-zulu/02.jpg",
-        "assets/portfolio/toilet-zulu/03.jpg",
-        "assets/portfolio/toilet-zulu/04.jpg",
-        "assets/portfolio/toilet-zulu/05.jpg",
-        "assets/portfolio/toilet-zulu/06.jpg",
-        "assets/portfolio/toilet-zulu/07.jpg",
-        "assets/portfolio/toilet-zulu/08.jpg",
-      ],
-    },
-    {
-      title: "Re-design Public Toilet PAPA F/S",
-      tag: "PHE ONWJ",
-      images: [
-        "assets/portfolio/toilet-papa/01.jpg",
-        "assets/portfolio/toilet-papa/02.jpg",
-        "assets/portfolio/toilet-papa/03.jpg",
-        "assets/portfolio/toilet-papa/04.jpg",
-        "assets/portfolio/toilet-papa/05.jpg",
-        "assets/portfolio/toilet-papa/06.jpg",
-      ],
-    },
-    {
-      title: "Re-design VTS Room PAPA F/S",
-      tag: "PHE ONWJ",
-      images: [
-        "assets/portfolio/vts-room/01.jpg",
-        "assets/portfolio/vts-room/02.jpg",
-        "assets/portfolio/vts-room/03.jpg",
-        "assets/portfolio/vts-room/04.jpg",
-        "assets/portfolio/vts-room/05.jpg",
-      ],
-    },
-    {
-      title: "Re-design & Fabrikasi Mushola Mike Mike F/S",
-      tag: "PHE ONWJ",
-      images: [
-        "assets/portfolio/mushola-mikemike/01.jpg",
-        "assets/portfolio/mushola-mikemike/02.jpg",
-        "assets/portfolio/mushola-mikemike/03.jpg",
-        "assets/portfolio/mushola-mikemike/04.jpg",
-        "assets/portfolio/mushola-mikemike/05.jpg",
-        "assets/portfolio/mushola-mikemike/06.jpg",
-        "assets/portfolio/mushola-mikemike/07.jpg",
-      ],
-    },
-    {
-      title: "Re-design & Fabrikasi Gym Mike Mike F/S",
-      tag: "PHE ONWJ",
-      images: [
-        "assets/portfolio/gym-mikemike/01.jpg",
-        "assets/portfolio/gym-mikemike/02.jpg",
-        "assets/portfolio/gym-mikemike/03.jpg",
-        "assets/portfolio/gym-mikemike/04.jpg",
-        "assets/portfolio/gym-mikemike/05.jpg",
-        "assets/portfolio/gym-mikemike/06.jpg",
-        "assets/portfolio/gym-mikemike/07.jpg",
-      ],
-    },
-    {
-      title: "Re-design & Fabrikasi Shelter Fire Truck & Jetty MB2",
-      tag: "PHE ONWJ",
-      images: [
-        "assets/portfolio/firetruck-jetty/01.jpg",
-        "assets/portfolio/firetruck-jetty/02.jpg",
-        "assets/portfolio/firetruck-jetty/03.jpg",
-        "assets/portfolio/firetruck-jetty/04.jpg",
-        "assets/portfolio/firetruck-jetty/05.jpg",
-        "assets/portfolio/firetruck-jetty/06.jpg",
-      ],
-    },
-    {
-      title: "Positioning Survey",
-      tag: "Jasa Survey",
-      images: [
-        "assets/portfolio/positioning-survey/01.jpg",
-        "assets/portfolio/positioning-survey/02.jpg",
-        "assets/portfolio/positioning-survey/03.jpg",
-        "assets/portfolio/positioning-survey/04.jpg",
-        "assets/portfolio/positioning-survey/05.jpg",
-        "assets/portfolio/positioning-survey/06.jpg",
-        "assets/portfolio/positioning-survey/07.jpg",
-      ],
-    },
-    {
-      title: "Super Dome",
-      tag: "Jasa Sewa Onshore & Offshore",
-      images: [
-        "assets/portfolio/super-dome/01.jpg",
-      ],
-    },
-    {
-      title: "Mooring Set",
-      tag: "Jasa Sewa Onshore & Offshore",
-      images: [
-        "assets/portfolio/mooring-set/01.jpg",
-        "assets/portfolio/mooring-set/02.jpg",
-        "assets/portfolio/mooring-set/03.jpg",
-        "assets/portfolio/mooring-set/04.jpg",
-        "assets/portfolio/mooring-set/05.jpg",
-        "assets/portfolio/mooring-set/06.jpg",
-        "assets/portfolio/mooring-set/07.jpg",
-      ],
-    },
-    {
-      title: "AGD — Automatic Gas Detector",
-      tag: "Jasa Sewa Onshore & Offshore",
-      images: [
-        "assets/portfolio/agd/01.jpg",
-        "assets/portfolio/agd/02.jpg",
-        "assets/portfolio/agd/03.jpg",
-      ],
-    },
-    {
-      title: "Chiksan Pipe for Temporary Flow Line",
-      tag: "Jasa Sewa Onshore & Offshore",
-      images: [
-        "assets/portfolio/chiksan/01.jpg",
-        "assets/portfolio/chiksan/02.jpg",
-        "assets/portfolio/chiksan/03.jpg",
-        "assets/portfolio/chiksan/04.jpg",
-      ],
-    },
+  /* SERTIFIKASI — tambahkan sesuai kebutuhan Anda */
+  certifications: [
+    { icon: "🏆", name: "ISO 9001:2015", desc: "Manajemen Mutu" },
+    { icon: "🌍", name: "ISO 14001:2015", desc: "Manajemen Lingkungan" },
+    { icon: "⚠️", name: "ISO 45001:2018", desc: "Keselamatan & Kesehatan Kerja" },
+    { icon: "🛡️", name: "BOSIET / OPITO", desc: "Sertifikasi Offshore" },
+    { icon: "📋", name: "TKDN", desc: "Tingkat Komponen Dalam Negeri" },
+    { icon: "✓", name: "Approved Contractor", desc: "Sertifikasi Klien Utama" },
   ],
 
+  /* WHATSAPP — ganti dengan nomor Anda (format internasional: +62 812...) */
   contact: {
     heading: "Mari diskusikan proyek Anda.",
     address: "Griya Loka BSD, Jl. Melinjo No.11 Blok C3, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan",
     email: "grindakarthaprima.pt@gmail.com",
     fax: "(021) 87782019",
-    // Untuk menghubungkan form ke email sungguhan, ganti fungsi handleContactSubmit()
-    // di bawah dengan pemanggilan API/endpoint Anda sendiri (mis. fetch ke /api/contact-us).
+    whatsapp: "+62 812 9999 8888",  /* GANTI DENGAN NOMOR WHATSAPP ANDA */
+  },
+
+  /* GOOGLE REVIEWS — jika punya Google Business Profile, embed di section review */
+  googleReviews: {
+    rating: "4.8",
+    totalReviews: "48+",
+    profileUrl: "https://www.google.com/search?q=PT+Grindak+Artha+Prima",
   },
 
   footer: {
@@ -287,6 +145,16 @@ function renderSite(cfg) {
   document.getElementById("product-list").innerHTML = cfg.products
     .map((p) => `<li>${p}</li>`).join("");
 
+  /* --- SERTIFIKASI BADGES --- */
+  document.getElementById("certifications-grid").innerHTML = cfg.certifications
+    .map((cert) => `
+      <div class="certification-badge">
+        <span class="cert-icon">${cert.icon}</span>
+        <h3>${cert.name}</h3>
+        <p>${cert.desc}</p>
+      </div>
+    `).join("");
+
   document.getElementById("portfolio-grid").innerHTML = cfg.portfolio
     .map(
       (p, i) => `
@@ -307,6 +175,16 @@ function renderSite(cfg) {
   document.getElementById("contact-address").textContent = cfg.contact.address;
   document.getElementById("contact-email").textContent = cfg.contact.email;
   document.getElementById("contact-fax").textContent = cfg.contact.fax;
+  
+  /* --- WHATSAPP LINK --- */
+  const whatsappLink = document.getElementById("whatsapp-link");
+  const whatsappNumber = cfg.contact.whatsapp.replace(/\D/g, '');
+  const whatsappMsg = encodeURIComponent("Halo, saya ingin konsultasi tentang proyek saya.");
+  whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
+  whatsappLink.textContent = cfg.contact.whatsapp;
+  
+  document.getElementById("whatsapp-widget").href = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
+  document.getElementById("whatsapp-widget").title = `Chat via WhatsApp: ${cfg.contact.whatsapp}`;
 
   const year = new Date().getFullYear();
   document.getElementById("footer-copy").textContent =
@@ -329,6 +207,165 @@ function renderSite(cfg) {
     )
     .join("");
 }
+
+/* Setiap item portofolio: title, tag (klien/kategori), images (array foto di /assets/portfolio/<slug>/)
+   Foto pertama di array jadi cover di grid; semua foto bisa digeser (slider) saat card diklik. */
+const portfolio = [
+  {
+    title: "Shelter Limbah Chemical MB2",
+    tag: "PHE ONWJ",
+    images: [
+      "assets/portfolio/shelter-limbah/01.jpg",
+      "assets/portfolio/shelter-limbah/02.jpg",
+      "assets/portfolio/shelter-limbah/03.jpg",
+      "assets/portfolio/shelter-limbah/04.jpg",
+      "assets/portfolio/shelter-limbah/05.jpg",
+    ],
+  },
+  {
+    title: "Fabrikasi Living Quarter KLA F/S",
+    tag: "PHE ONWJ",
+    images: [
+      "assets/portfolio/living-quarter/01.jpg",
+      "assets/portfolio/living-quarter/02.jpg",
+      "assets/portfolio/living-quarter/03.jpg",
+      "assets/portfolio/living-quarter/04.jpg",
+      "assets/portfolio/living-quarter/05.jpg",
+      "assets/portfolio/living-quarter/06.jpg",
+      "assets/portfolio/living-quarter/07.jpg",
+      "assets/portfolio/living-quarter/08.jpg",
+      "assets/portfolio/living-quarter/09.jpg",
+      "assets/portfolio/living-quarter/10.jpg",
+    ],
+  },
+  {
+    title: "Re-design Public Toilet & Mushola Zulu F/S",
+    tag: "PHE ONWJ",
+    images: [
+      "assets/portfolio/toilet-zulu/01.jpg",
+      "assets/portfolio/toilet-zulu/02.jpg",
+      "assets/portfolio/toilet-zulu/03.jpg",
+      "assets/portfolio/toilet-zulu/04.jpg",
+      "assets/portfolio/toilet-zulu/05.jpg",
+      "assets/portfolio/toilet-zulu/06.jpg",
+      "assets/portfolio/toilet-zulu/07.jpg",
+      "assets/portfolio/toilet-zulu/08.jpg",
+    ],
+  },
+  {
+    title: "Re-design Public Toilet PAPA F/S",
+    tag: "PHE ONWJ",
+    images: [
+      "assets/portfolio/toilet-papa/01.jpg",
+      "assets/portfolio/toilet-papa/02.jpg",
+      "assets/portfolio/toilet-papa/03.jpg",
+      "assets/portfolio/toilet-papa/04.jpg",
+      "assets/portfolio/toilet-papa/05.jpg",
+      "assets/portfolio/toilet-papa/06.jpg",
+    ],
+  },
+  {
+    title: "Re-design VTS Room PAPA F/S",
+    tag: "PHE ONWJ",
+    images: [
+      "assets/portfolio/vts-room/01.jpg",
+      "assets/portfolio/vts-room/02.jpg",
+      "assets/portfolio/vts-room/03.jpg",
+      "assets/portfolio/vts-room/04.jpg",
+      "assets/portfolio/vts-room/05.jpg",
+    ],
+  },
+  {
+    title: "Re-design & Fabrikasi Mushola Mike Mike F/S",
+    tag: "PHE ONWJ",
+    images: [
+      "assets/portfolio/mushola-mikemike/01.jpg",
+      "assets/portfolio/mushola-mikemike/02.jpg",
+      "assets/portfolio/mushola-mikemike/03.jpg",
+      "assets/portfolio/mushola-mikemike/04.jpg",
+      "assets/portfolio/mushola-mikemike/05.jpg",
+      "assets/portfolio/mushola-mikemike/06.jpg",
+      "assets/portfolio/mushola-mikemike/07.jpg",
+    ],
+  },
+  {
+    title: "Re-design & Fabrikasi Gym Mike Mike F/S",
+    tag: "PHE ONWJ",
+    images: [
+      "assets/portfolio/gym-mikemike/01.jpg",
+      "assets/portfolio/gym-mikemike/02.jpg",
+      "assets/portfolio/gym-mikemike/03.jpg",
+      "assets/portfolio/gym-mikemike/04.jpg",
+      "assets/portfolio/gym-mikemike/05.jpg",
+      "assets/portfolio/gym-mikemike/06.jpg",
+      "assets/portfolio/gym-mikemike/07.jpg",
+    ],
+  },
+  {
+    title: "Re-design & Fabrikasi Shelter Fire Truck & Jetty MB2",
+    tag: "PHE ONWJ",
+    images: [
+      "assets/portfolio/firetruck-jetty/01.jpg",
+      "assets/portfolio/firetruck-jetty/02.jpg",
+      "assets/portfolio/firetruck-jetty/03.jpg",
+      "assets/portfolio/firetruck-jetty/04.jpg",
+      "assets/portfolio/firetruck-jetty/05.jpg",
+      "assets/portfolio/firetruck-jetty/06.jpg",
+    ],
+  },
+  {
+    title: "Positioning Survey",
+    tag: "Jasa Survey",
+    images: [
+      "assets/portfolio/positioning-survey/01.jpg",
+      "assets/portfolio/positioning-survey/02.jpg",
+      "assets/portfolio/positioning-survey/03.jpg",
+      "assets/portfolio/positioning-survey/04.jpg",
+      "assets/portfolio/positioning-survey/05.jpg",
+      "assets/portfolio/positioning-survey/06.jpg",
+      "assets/portfolio/positioning-survey/07.jpg",
+    ],
+  },
+  {
+    title: "Super Dome",
+    tag: "Jasa Sewa Onshore & Offshore",
+    images: ["assets/portfolio-super-dome.jpg"],
+  },
+  {
+    title: "Mooring Set",
+    tag: "Jasa Sewa Onshore & Offshore",
+    images: [
+      "assets/portfolio/mooring-set/01.jpg",
+      "assets/portfolio/mooring-set/02.jpg",
+      "assets/portfolio/mooring-set/03.jpg",
+      "assets/portfolio/mooring-set/04.jpg",
+      "assets/portfolio/mooring-set/05.jpg",
+      "assets/portfolio/mooring-set/06.jpg",
+      "assets/portfolio/mooring-set/07.jpg",
+    ],
+  },
+  {
+    title: "AGD — Automatic Gas Detector",
+    tag: "Jasa Sewa Onshore & Offshore",
+    images: [
+      "assets/portfolio/agd/01.jpg",
+      "assets/portfolio/agd/02.jpg",
+      "assets/portfolio/agd/03.jpg",
+    ],
+  },
+  {
+    title: "Chiksan Pipe for Temporary Flow Line",
+    tag: "Jasa Sewa Onshore & Offshore",
+    images: [
+      "assets/portfolio/chiksan/01.jpg",
+      "assets/portfolio/chiksan/02.jpg",
+      "assets/portfolio/chiksan/03.jpg",
+      "assets/portfolio/chiksan/04.jpg",
+    ],
+  },
+];
+
+siteConfig.portfolio = portfolio;
 
 /* ---------------- Mobile nav toggle ---------------- */
 function setupNav() {
@@ -403,7 +440,7 @@ function setupActiveNav() {
 /* ---------------- Reveal-on-scroll for .reveal + grid children ---------------- */
 function setupRevealAnimations(reduceMotion) {
   const targets = document.querySelectorAll(
-    ".reveal, .service-grid > *, .commit-grid > *, .product-list > *, .portfolio-grid > *"
+    ".reveal, .service-grid > *, .commit-grid > *, .product-list > *, .portfolio-grid > *, .certifications-grid > *"
   );
   if (reduceMotion || !("IntersectionObserver" in window)) {
     targets.forEach((el) => el.classList.add("in-view"));
@@ -478,108 +515,52 @@ function setupHero(reduceMotion) {
   });
 }
 
-/* ---------------- Portfolio lightbox (gallery slider) ---------------- */
-function setupLightbox(cfg) {
+/* ---------------- Portfolio lightbox (simple single image) -------- */
+function setupLightbox() {
   const grid = document.getElementById("portfolio-grid");
   const lightbox = document.getElementById("lightbox");
-  const track = document.getElementById("lightbox-track");
+  const img = document.getElementById("lightbox-img");
   const caption = document.getElementById("lightbox-caption");
-  const counter = document.getElementById("lightbox-counter");
-  const dotsWrap = document.getElementById("lightbox-dots");
   const closeBtn = document.getElementById("lightbox-close");
-  const prevBtn = document.getElementById("lightbox-prev");
-  const nextBtn = document.getElementById("lightbox-next");
-
-  let images = [];
-  let title = "";
-  let tag = "";
-  let index = 0;
-
-  function renderSlide() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-    caption.textContent = `${title} — ${tag}`;
-    counter.textContent = `${index + 1} / ${images.length}`;
-    dotsWrap.querySelectorAll("button").forEach((d, i) =>
-      d.classList.toggle("active", i === index)
-    );
-    prevBtn.style.visibility = images.length > 1 ? "visible" : "hidden";
-    nextBtn.style.visibility = images.length > 1 ? "visible" : "hidden";
-  }
-
-  function goTo(i) {
-    index = (i + images.length) % images.length;
-    renderSlide();
-  }
-
-  function open(project, startIndex) {
-    images = project.images;
-    title = project.title;
-    tag = project.tag;
-    index = startIndex || 0;
-
-    track.innerHTML = images
-      .map((src) => `<div class="lightbox-slide"><img src="${src}" alt="${title}"></div>`)
-      .join("");
-    dotsWrap.innerHTML =
-      images.length > 1
-        ? images.map((_, i) => `<button aria-label="Foto ${i + 1}"></button>`).join("")
-        : "";
-
-    renderSlide();
-    lightbox.classList.add("open");
-    lightbox.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-  }
-
-  function close() {
-    lightbox.classList.remove("open");
-    lightbox.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-  }
 
   grid.addEventListener("click", (e) => {
     const card = e.target.closest(".portfolio-card");
     if (!card) return;
-    const i = parseInt(card.dataset.index, 10);
-    open(cfg.portfolio[i], 0);
+    const imgEl = card.querySelector("img");
+    const titleEl = card.querySelector("h3");
+    const tagEl = card.querySelector(".tag");
+    
+    img.src = imgEl.src;
+    img.alt = titleEl.textContent;
+    caption.textContent = `${titleEl.textContent} — ${tagEl.textContent}`;
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
   });
 
-  dotsWrap.addEventListener("click", (e) => {
-    const btn = e.target.closest("button");
-    if (!btn) return;
-    goTo(Array.from(dotsWrap.children).indexOf(btn));
-  });
+  const close = () => {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
 
-  prevBtn.addEventListener("click", () => goTo(index - 1));
-  nextBtn.addEventListener("click", () => goTo(index + 1));
   closeBtn.addEventListener("click", close);
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) close();
   });
   document.addEventListener("keydown", (e) => {
-    if (!lightbox.classList.contains("open")) return;
-    if (e.key === "Escape") close();
-    if (e.key === "ArrowRight") goTo(index + 1);
-    if (e.key === "ArrowLeft") goTo(index - 1);
+    if (lightbox.classList.contains("open") && e.key === "Escape") close();
   });
+}
 
-  // Swipe support (touch devices)
-  let touchStartX = null;
-  track.addEventListener(
-    "touchstart",
-    (e) => (touchStartX = e.touches[0].clientX),
-    { passive: true }
-  );
-  track.addEventListener(
-    "touchend",
-    (e) => {
-      if (touchStartX === null) return;
-      const dx = e.changedTouches[0].clientX - touchStartX;
-      if (Math.abs(dx) > 40) goTo(dx < 0 ? index + 1 : index - 1);
-      touchStartX = null;
-    },
-    { passive: true }
-  );
+/* ---------------- WhatsApp Widget visibility on scroll -------- */
+function setupWhatsAppWidget() {
+  const widget = document.getElementById("whatsapp-widget");
+  const onScroll = () => {
+    widget.classList.toggle("visible", window.scrollY > 300);
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
 }
 
 /* ---------------- Back to top button ---------------- */
@@ -608,6 +589,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupRevealAnimations(reduceMotion);
   setupStatsCountUp(reduceMotion);
   setupHero(reduceMotion);
-  setupLightbox(siteConfig);
+  setupLightbox();
+  setupWhatsAppWidget();
   setupBackToTop();
 });

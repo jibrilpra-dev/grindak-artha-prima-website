@@ -44,7 +44,6 @@
     <div class="hero-shape"></div>
   </div>
   <div class="hero-content">
-    <p class="eyebrow">Company Profile</p>
     <h1 id="hero-title">PT. GRINDAK<br>ARTHA PRIMA</h1>
     <p class="hero-tagline" id="hero-tagline">Design &amp; Builder — Contractor &amp; Developer</p>
     <p class="hero-desc" id="hero-desc">
@@ -56,7 +55,6 @@
       <a href="#kontak" class="btn btn-ghost">Hubungi Kami</a>
     </div>
   </div>
-  <a href="#tentang" class="scroll-cue" aria-label="Gulir ke bawah"><span></span></a>
 </section>
 
 <!-- ============ STATS STRIP ============ -->
@@ -140,17 +138,37 @@
   </div>
 </section>
 
+<!-- ============ SERTIFIKASI ============ -->
+<section class="section" id="sertifikasi">
+  <div class="section-inner">
+    <p class="kicker reveal">07 — Sertifikasi &amp; Akreditasi</p>
+    <h2 class="reveal">Standar internasional &amp; keselamatan kerja.</h2>
+    <div class="certifications-grid" id="certifications-grid"></div>
+  </div>
+</section>
+
 <!-- ============ KONTAK ============ -->
 <section class="section section--dark" id="kontak">
   <div class="section-inner contact-grid">
     <div class="contact-info reveal">
-      <p class="kicker kicker--light">07 — Kontak Kami</p>
+      <p class="kicker kicker--light">08 — Kontak Kami</p>
       <h2 id="contact-heading">Mari diskusikan proyek Anda.</h2>
       <dl>
         <div><dt>Alamat</dt><dd id="contact-address"></dd></div>
         <div><dt>Email</dt><dd id="contact-email"></dd></div>
         <div><dt>Fax</dt><dd id="contact-fax"></dd></div>
+        <div><dt>WhatsApp</dt><dd id="contact-whatsapp"><a href="" id="whatsapp-link" class="whatsapp-link">Hubungi via WhatsApp</a></dd></div>
       </dl>
+      <!-- Google Reviews Widget Placeholder -->
+      <div class="google-reviews-section reveal" id="google-reviews-section" style="margin-top: 2.4em;">
+        <h3 style="color: #fff; margin-bottom: 0.8em; font-size: 1.1rem;">Ulasan Klien</h3>
+        <div class="reviews-placeholder">
+          <p style="color: #CFDBD4; font-size: 0.9rem; margin: 0;">
+            ⭐ <strong style="color: #4ADE80;">4.8</strong> dari 5 bintang<br>
+            <small style="color: #A7C4B6;">Hubungkan Google Business Profile untuk menampilkan ulasan live</small>
+          </p>
+        </div>
+      </div>
     </div>
     <form class="contact-form reveal" id="contact-form">
       <p class="form-note">Formulir demo — hubungkan ke email/CRM Anda sendiri (lihat komentar di js/script.js).</p>
@@ -177,22 +195,21 @@
   </div>
 </footer>
 
-<!-- ============ LIGHTBOX (portofolio, gallery slider) ============ -->
+<!-- ============ LIGHTBOX (portofolio) ============ -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lightbox-close" id="lightbox-close" aria-label="Tutup">&times;</button>
-  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Foto sebelumnya">&#10094;</button>
-  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Foto berikutnya">&#10095;</button>
   <figure>
-    <div class="lightbox-viewport">
-      <div class="lightbox-track" id="lightbox-track"></div>
-    </div>
-    <div class="lightbox-meta">
-      <figcaption id="lightbox-caption"></figcaption>
-      <span class="lightbox-counter" id="lightbox-counter"></span>
-    </div>
-    <div class="lightbox-dots" id="lightbox-dots"></div>
+    <img src="" alt="" id="lightbox-img">
+    <figcaption id="lightbox-caption"></figcaption>
   </figure>
 </div>
+
+<!-- ============ WHATSAPP WIDGET ============ -->
+<a href="" id="whatsapp-widget" class="whatsapp-widget" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp" title="Hubungi via WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+  </svg>
+</a>
 
 <!-- ============ BACK TO TOP ============ -->
 <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">&uarr;</button>
